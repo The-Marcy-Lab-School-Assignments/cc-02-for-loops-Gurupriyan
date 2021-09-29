@@ -29,19 +29,19 @@ function countEveryOdd(num){
 }
 
 //5 
-let evenArray = [];
+let numOfEven = 0;
 function countEvens(array){
   for (let i = 0; i < array.length; i++){
       if (array[i] % 2 === 0){
-          evenArray.push(array[i]);
+          numOfEven++;
       }
   }
-  return evenArray;
+  return numOfEven;
 }
 
 
-countToTen();
-countFromOne(12);
-countEveryEven(14);
-countEveryOdd(15);
-console.log(countEvens([1,2,3,4,5,6,7,8,9,10]));
+//countToTen();
+//countFromOne(12);
+//countEveryEven(14);
+//countEveryOdd(15);
+console.log(countEvens([1,2,3,4,5,6,7,8,8,10]));
